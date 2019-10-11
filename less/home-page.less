@@ -5,7 +5,7 @@
   .intro {
 
     h2 {
-      padding: 15px;
+      .default-padding();
     }
 
     p {
@@ -28,7 +28,7 @@
   }
 
   .visit-planets {
-    padding: 15px;
+    .default-padding();
 
     h3 {
       margin-top: 11px;
@@ -43,8 +43,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex();
 
     .walk-text {
       width: 50%;
@@ -58,6 +57,13 @@
       }
 
       .btn {
+        .btn-style(@btn-bg-color,@porcelain);
+
+        &:hover {
+          background-color: #F6F7F8;
+          color: #22283A;
+          cursor: pointer;
+        }
       }
     }
 
