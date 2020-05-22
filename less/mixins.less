@@ -1,1 +1,26 @@
-// Mixins Here
+
+// Parametric Mixin
+.btn-style(@bg-color, @txt-color) {
+    width: 25%;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: @bg-color;
+    color: @txt-color;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+// Mixins
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.default-padding {
+    padding: 15px;
+}
+
+// End Mixins
+
